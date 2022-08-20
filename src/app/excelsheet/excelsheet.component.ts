@@ -8,7 +8,7 @@ import * as xlsx from 'xlsx';
 })
 export class ExcelsheetComponent implements OnInit {
 
-  data: [][] = [];
+  data: any[][] = [];
 
   constructor() { }
 
@@ -36,9 +36,10 @@ export class ExcelsheetComponent implements OnInit {
       console.log(this.data);
 
       const num = this.data;
-      console.log(num);
+      console.log(num[1][2]);
 
     }
+   
 
     reader.readAsBinaryString(target.files[0]);
 

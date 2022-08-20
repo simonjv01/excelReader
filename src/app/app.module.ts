@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatTableModule} from '@angular/material/table';
 
 import { AppComponent } from './app.component';
 import { ExcelsheetComponent } from './excelsheet/excelsheet.component';
@@ -10,7 +11,8 @@ import { ExcelsheetComponent } from './excelsheet/excelsheet.component';
     ExcelsheetComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
